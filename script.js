@@ -278,6 +278,11 @@ class App {
       this._renderWorkout(work);
     });
   }
+  
+  _clearLocalStorage() {
+    localStorage.clear();
+    location.reload();
+  }
 }
 
 const app = new App();
