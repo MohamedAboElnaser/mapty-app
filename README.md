@@ -15,6 +15,12 @@ The Mapty App is a simple application that allows users to record their running 
 - Display workout information as popups on the map
 - Reset the local Storage
 
+## Used Technology
+- HTML
+- Css
+- Js
+- Leaflet
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/MohamedAboElnaser/mapty-app.git`
