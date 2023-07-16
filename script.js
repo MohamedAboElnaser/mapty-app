@@ -7,7 +7,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
-
+const resetBtn = document.querySelector('.resetButton');
 class Workout {
   id = (Date.now() + '').slice(-10);
   date = new Date();
@@ -104,7 +104,7 @@ class App {
     //   the initial location to the map
     L.marker([51.5, -0.09])
       .addTo(this.#map)
-      .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+      .bindPopup('Welcome to Mapty project')
       .openPopup();
 
     // here we show the form
@@ -278,7 +278,7 @@ class App {
       this._renderWorkout(work);
     });
   }
-  
+
   _clearLocalStorage() {
     localStorage.clear();
     location.reload();
@@ -286,3 +286,6 @@ class App {
 }
 
 const app = new App();
+resetBtn.addEventListener('click', function () {
+  app._clearLocalStorage();
+});
