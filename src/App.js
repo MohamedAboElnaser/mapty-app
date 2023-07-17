@@ -37,7 +37,7 @@ class App {
 
   _loadMap(position) {
     let { latitude, longitude } = position.coords;
-    this.#map = L.map('map').setView([latitude, longitude], 6);
+    this.#map = L.map('map').setView([latitude, longitude], 9);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
@@ -45,7 +45,7 @@ class App {
     }).addTo(this.#map);
 
     //   the initial location to the map
-    L.marker([51.5, -0.09])
+    L.marker([latitude, longitude])
       .addTo(this.#map)
       .bindPopup('Welcome to Mapty App')
       .openPopup();
@@ -201,10 +201,10 @@ class App {
 
     let workout = this.#workout.find(wo => wo.id === workoutElement.dataset.id);
 
-    this.#map.setView(workout.coords, 6, {
+    this.#map.setView(workout.coords, 9, {
       animate: true,
       pan: {
-        duration: 1,
+        duration: 1.2,
       },
     });
   }
