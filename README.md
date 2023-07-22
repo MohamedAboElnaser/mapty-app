@@ -27,7 +27,6 @@ The Mapty App is a simple application that allows users to record their running 
 4. Press the Enter key or click the submit button to save the workout.
 5. The workout will be displayed as a popup on the map, showing the details you entered.
 
-
 ## Used Technology
 
 - HTML
@@ -41,10 +40,11 @@ The Mapty App is a simple application that allows users to record their running 
 2. Navigate to the project directory
 3. Open `index.html` in your preferred web browser.
 
-
 ## Live Demo
 
-click the [link](https://mohamedaboelnaser.github.io/mapty-app/)
+- click the [link](https://mohamedaboelnaser.github.io/mapty-app/)
+
+- netlify version [link](https://mapty-app-mohamed-aboelnasr.netlify.app/)
 
 ## License
 
